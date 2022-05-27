@@ -13,7 +13,7 @@ Ganador grass
 ```bash
 node pokeApi.js pikachu cramorant
 ```
-Ganador eLectric
+Ganador electric
 
 3.-node pokeApi.js rock water   
 ```bash
