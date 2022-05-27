@@ -34,5 +34,5 @@ node pokeApi.js metapod charmander
 Ganador fire
 
 References:
-*https://bulbapedia.bulbagarden.net/wiki/Type#Type_effectiveness 
-*https://www.vg247.com/pokemon-go-type-chart-strength-weakness-effectiveness-counters 
+* https://bulbapedia.bulbagarden.net/wiki/Type#Type_effectiveness 
+* https://www.vg247.com/pokemon-go-type-chart-strength-weakness-effectiveness-counters 
