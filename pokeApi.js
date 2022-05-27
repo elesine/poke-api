@@ -29,15 +29,13 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon1}`)
 
                 function versus() {
                   if (
-                    Pokemon1DamageTo.filter(function (pokemon1DamageTo) {
-                      return pokemon1DamageTo.name === namePrimaryTypePokemon2;
-                    }).length
+                    Pokemon1DamageTo.find( pokemon1DamageTo => 
+                      pokemon1DamageTo.name === namePrimaryTypePokemon2 )
                   ) {
                     return pokemon1;
                   } else if (
-                    Pokemon2DamageTo.filter(function (pokemon2DamageTo) {
-                      return pokemon2DamageTo.name === namePrimaryTypePokemon1;
-                    }).length
+                    Pokemon2DamageTo.find( pokemon2DamageTo => 
+                      pokemon2DamageTo.name === namePrimaryTypePokemon1 ) 
                   ) {
                     return pokemon2;
                   } else return "Empate";
@@ -58,3 +56,4 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon1}`)
           });
       });
   });
+
