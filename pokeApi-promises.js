@@ -47,11 +47,11 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon1}`)
 
                 console.log(
                   pokemon1.toUpperCase() +
-                    " ->(type) " +
+                    " ->(tipo) " +
                     pokemon1PrimaryTypeName +
                     " VS " +
                     pokemon2.toUpperCase() +
-                    " ->(type) " +
+                    " ->(tipo) " +
                     pokemon2PrimaryTypeName +
                     "\nEl ganador es: " +
                     versus()
