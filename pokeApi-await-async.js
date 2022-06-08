@@ -3,13 +3,13 @@ import fetch from "node-fetch";
 const pokemon1 = process.argv[2];
 const pokemon2 = process.argv[3];
 
-function CustomError(from_, status_ ) {
+function CustomError(from_, status_) {
   let instance = new Error(from_, status_);
   instance.from = from_;
   instance.status = status_;
   instance.message = `${instance.from}, ${
         instance.status == 404
-      ? "It does not exist. Enter the name correctly!"
+      ? "Pokemon Not Found. Enter the name correctly!"
       : instance.status >= 500
       ? "At this moment the service is not available!"
       : "HTTP error!"
@@ -65,17 +65,17 @@ const versus = async (pokemon1, pokemon2) => {
       )
     ) {
       winner = pokemon2;
-    } else winner = "Empate";
+    } else winner = "Both!. It is a Tie";
 
     console.log(
       pokemon1.toUpperCase() +
-        " ->(tipo) " +
+        " ->(type) " +
         pokemon1PrimaryTypeName +
         " VS " +
         pokemon2.toUpperCase() +
-        " ->(tipo) " +
+        " ->(type) " +
         pokemon2PrimaryTypeName +
-        "\nEl ganador es: " +
+        "\nThe winner is: " +
         winner
     );
   } catch (err) {

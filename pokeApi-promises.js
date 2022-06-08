@@ -42,18 +42,18 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon1}`)
                     )
                   ) {
                     return pokemon2;
-                  } else return "Empate";
+                  } else return "Both!. It is a Tie";
                 }
 
                 console.log(
                   pokemon1.toUpperCase() +
-                    " ->(tipo) " +
+                    " ->(type) " +
                     pokemon1PrimaryTypeName +
                     " VS " +
                     pokemon2.toUpperCase() +
-                    " ->(tipo) " +
+                    " ->(type) " +
                     pokemon2PrimaryTypeName +
-                    "\nEl ganador es: " +
+                    "\nThe winner is: " +
                     versus()
                 );
               });
